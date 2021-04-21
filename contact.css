@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+   
+}
+
+
+
+
+
+
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;  
+    padding: 30px 0;
+    background: #151515;
+    font-family: 'Roboto', serif;
+    transition: all 0.3s ease;
+}
+
+
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: #151515;
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+
+
+.navbar.sticky .logo a span{
+    color: #fff;
+    
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+
+.navbar .menu li a{    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+
+
+/* menu btn styling */
+.menu-btn{
+    color: #FFFFFF;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+/* all similar content styling code */
+
+section{
+	padding: 100px 0;
+}
+
+
+section .title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-family: 'Roboto', serif;
+}
+
+
+
+section .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 240px;
+	height: 3px;
+	background: #111;
+	transform: translateX(-50%);
+}
+
+
+
+section .title::after{
+	
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-size: 20px;
+	color: crimson;
+	padding: 5px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+/* Contact Section */
+
+
+
+.contact{
+
+   
+}
+
+
+form{
+
+width: 70%;
+margin: 0 auto;
+
+}
+
+
+form label{
+font-size: 1.5rem;
+
+}
+
+
+input, textarea{
+width: 100%;
+padding: 1rem;
+margin-bottom: 5px;
+border-color: black;
+border-style: double;
+
+
+}
+
+
+
+input[type="submit"]{
+
+width: initial;
+background-color: #000000;
+
+color: white;
+padding: 1rem 2rem;
+border-radius: .8rem;
+
+cursor: pointer;
+transition: background-color 650ms;
+
+}
+
+
+
+input[type="submit"]:hover{
+color: black;
+background-color: azure;
+
+}
+
+
+
+
+
+/* Social Section styling */
+
+
+
+.social-icons{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+}
+.social-icons a{
+    color: #111;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.social-icons i{
+    color: #000000;
+}
+
+
+.social-icons a:hover{
+background:  #000000;
+box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+transition: all ease 0.5s;
+
+}
+
+
+.social-icons a:hover i{
+
+color: #FFFFFF;
+transition: all ease 0.5s;
+}
+
+
+
+
+
+
+/* Footer styling */
+
+footer{
+    background: #151515;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+/* responsive media query start */
+
+
+@media (max-width: 1300px) {
+	
+	
+
+	
+}
+
+
+@media (max-width: 1104px) {
+
+	
+}
+
+
+@media (max-width: 991px) {
+ .max-width{
+        padding: 0 50px;
+    }
+	
+}
+
+
+
+@media (max-width: 947px) {
+    
+	
+	.menu-btn{
+    
+    display: block;
+	z-index: 999;
+	
+}
+	
+	 .menu-btn i.active:before{
+        content: "\f00d";
+    }
+	
+	.navbar .menu{
+		position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+		top: 0;
+		background: #111;
+		text-align: center;
+		padding-top: 80px;
+		transition: all 0.3s ease;
+		
+		
+	}
+	
+  .navbar .menu.active{
+        left: 0;
+    }
+	
+	.navbar .menu li{
+        display: block;
+    }
+	 .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+	
+
+	
+    .max-width{
+    max-width: 800px;  
+}
+		
+
+	
+	
+}
+
+
+
+@media (max-width: 690px) {
+ 
+	.max-width{
+        padding: 0 23px;
+    }
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+ 
+	
+	.social-icons{
+        margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+        align-items: center;
+     
+    }
+
+	
+}
+
+
