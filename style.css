@@ -1,0 +1,639 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+/*portfolio image size*/
+img{
+    width: 100%;
+    display: block;
+}
+
+h3, p{
+    margin: 15px 0;
+}
+body{
+    line-height: 1.6;
+}
+
+
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+	z-index: 999;
+     padding: 30px 0;
+	/*background: #151515;*/
+    font-family: 'Adamina', serif;
+    font-family: 'Poppins', sans-serif;
+	transition: all 0.3s ease;
+    
+}
+
+
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: #151515;
+}
+
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.navbar .menu li a{    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+	transition: color 0.3s ease;
+}
+
+
+
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+
+
+/* menu btn styling */
+.menu-btn{
+    color: #FFFFFF;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+/* home section styling */
+.home{
+display: flex;
+background: url("images/banner.jpg") no-repeat center;	
+height: 100vh;
+color: #FFFFFF;
+min-height: 500px;	
+background-size: cover;
+background-attachment: fixed;	
+font-family: 'Adamina', serif;
+    font-family: 'Poppins', sans-serif;
+	
+}
+
+
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+
+
+
+/* all similar content styling code */
+
+section{
+	padding: 100px 0;
+}
+
+
+section .title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+	font-family: 'Adamina', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 240px;
+	height: 3px;
+	background: #111;
+	transform: translateX(-50%);
+}
+
+
+
+section .title::after{
+	
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	font-size: 20px;
+	color: crimson;
+	padding: 5px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+
+/* about section styling */
+
+
+
+.about, .services, footer{
+    font-family: 'Adamina', serif;
+    font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+
+
+
+.about .title::after{
+    content: "Who I am";
+
+}
+
+
+
+
+.about .about-content, .services .serv-content{
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about .about-content .center{
+width: 55%;
+
+}
+
+.about .about-content .center{
+font-size: 25px;
+font-weight: 600;
+margin-bottom: 10px;	
+
+}
+
+
+.about .about-content .center .text span{
+color: crimson;
+}
+
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+
+
+
+/* Services Section styling */
+
+.services{
+    color: #fff;
+    background: #1d1d1d;
+        
+    }
+
+
+.services .title::before{
+        background: #fff;
+    }
+
+
+
+.services .title::after{
+    background: #1d1d1d;
+    content: "what i provide";
+
+
+}
+
+
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #fff;
+    color: #111;
+    text-align: center;
+    border-radius: 6px;
+    padding: 35px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.services .serv-content .card:hover{
+    width: calc(33% - 20px);
+    background: #111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 35px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.services .serv-content .card:hover{
+    background: #111;
+}
+
+
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #111;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+
+
+
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
+
+/* Social Section styling */
+
+
+
+.social-icons{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+}
+.social-icons a{
+    color: #111;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.social-icons i{
+    color: #000000;
+}
+
+
+.social-icons a:hover{
+background:  #000000;
+box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+transition: all ease 0.5s;
+
+}
+
+
+.social-icons a:hover i{
+
+color: #FFFFFF;
+transition: all ease 0.5s;
+}
+
+
+
+
+
+/* Footer styling */
+
+footer{
+    background: #151515;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: left;
+
+}
+
+
+
+
+
+
+/* responsive media query start */
+
+
+@media (max-width: 1300px) {
+	.home .max-width{
+		margin-left: 0px;
+	}
+	
+	
+	
+}
+
+
+@media (max-width: 1104px) {
+	.about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+	
+}
+
+
+@media (max-width: 991px) {
+ .max-width{
+        padding: 0 50px;
+    }
+	
+}
+
+
+
+@media (max-width: 947px) {
+    
+	
+	.menu-btn{
+    
+    display: block;
+	z-index: 999;
+	
+}
+	
+	 .menu-btn i.active:before{
+        content: "\f00d";
+    }
+	
+	.navbar .menu{
+		position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+		top: 0;
+		background: #111;
+		text-align: center;
+		padding-top: 80px;
+		transition: all 0.3s ease;
+		
+		
+	}
+	
+  .navbar .menu.active{
+        left: 0;
+    }
+	
+	.navbar .menu li{
+        display: block;
+    }
+	 .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+	
+	.home .home-content .text-2{
+    font-size: 70px;
+    
+}
+    .home .home-content .text-3{
+    font-size: 35px;
+   
+}
+	
+    .max-width{
+    max-width: 800px;  
+}
+		
+	.about .about-content .column{
+	 width: 50px;
+	}
+
+	.about .about-content .center{
+	 flex: 100%;
+	}
+	
+	
+	.services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+	
+	
+}
+
+
+
+
+
+
+
+@media (max-width: 690px) {
+ 
+	.max-width{
+        padding: 0 23px;
+    }
+	
+	.home .home-content .text-2{
+    font-size: 60px;
+    
+}
+    .home .home-content .text-3{
+    font-size: 32px;
+   
+}
+	
+.services .serv-content .card{
+    width: 100%
+
+}
+
+}
+
+
+@media (max-width: 500px) {
+ 
+	
+	
+	.home .home-content .text-2{
+    font-size: 50px;
+    
+}
+    .home .home-content .text-3{
+    font-size: 27px;
+   
+}
+	
+}
+
+
+
+
+
+
+
+/**************** portfolio.html ***************/
+
+
+
+/* section three */
+
+
+.section-three{
+    margin: 40px 0;
+}
+.single-img{
+    position: relative;
+    margin: 10px;
+}
+.single-img-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.single-img-content h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/************** end of portfolio.html ***********/
+
+
+
+
+@media screen and (min-width: 800px){ 
+	
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+	
+	
+	
+}
+	
+	
+	
+
+@media screen and (min-width: 1200px){ 
+
+.gallery{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+
