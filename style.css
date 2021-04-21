@@ -595,6 +595,21 @@ footer{
 
 
 
+@media (max-width: 340px) {
+ 
+	
+	.social-icons{
+        margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+        align-items: center;
+     
+    }
+
+	
+}
+
+
+
 /**************** portfolio.html ***************/
 
 
