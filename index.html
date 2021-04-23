@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 
@@ -7,6 +7,7 @@
 <title>Personal Portfolio Website</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>	
 
 	<!--navigation font-->
@@ -20,14 +21,19 @@
 
 <body>
 	
+	<header>
 	<nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">PORTFO<span>LIO.</span></a></div>
+            <a class="navbar-log" href="#"><img src="images/logo4.svg" alt=""></a>
+		
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
-				<li><a href="gallery.html">Portfolio</a></li> 
-                <li><a href="index.html">About</a></li>              
-                <li><a href="contact.html">Contact</a></li>
+				<li><a href="#about">About</a></li> 
+                <li><a href="#services">My Services</a></li> 
+				<li><a href="#social">Social</a></li> 
+				<li><a href="#section-three">Portfolio</a></li>                             
+                <li><a href="#contact">Contact</a></li>
+			
             </ul>
 			
 			<div class="menu-btn">
@@ -37,14 +43,21 @@
 	        </div>
             </nav>
 	
+
+		</header>
+
+
+
+
 	
 	<!-- home section start -->
     <section class="home" id="home">
+		<h6>Home</h6>
 	<div class="max-width">	
 	<div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Khavish Sumbhoo</div>
-                <div class="text-3">And I'm a <span>Motion Designer</span></div>	
+                <div class="text-3">And I'm a <span class="typing"></span></div>	
 		
 		
 		
@@ -64,8 +77,8 @@
 		
 		
 		<div class="column center">
-		<div class="text">I'm Khavish and I'm a <span>Motion Designer</span></div>	</div>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+		<div class="text">I'm Khavish and I'm a <span class="typing-2"></span></div>	</div>
+		<p>As you may probably know, I'm a Motion Mesigner, VFX artist, and Web Designer. I have just started as a Motion Designer and VFX artist and enjoy turning my imagination into complex, beautiful, and intuitive motion graphics, designs, and loops. I'm currently studying at the Open University of Mauritius in the IT field while working on several motion design projects. </p>
 		
 		
 		
@@ -82,26 +95,25 @@
 	
 	<!-- services section start -->
 		
-	<section class="services">  
+	<section class="services" id="services">  
 
      <div class="max-width">
          <h2 class="title">My Services</h2>
          <div class="serv-content">
          <div class="card">
 			<div class="box">
-				<i class="fas fa-paint-brush"></i>
+				<i class="fas fa-globe"></i>
 				<div class="text">Web Design</div> 
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+			
 
             </div>
           </div> 
 
 		  <div class="card">
 			<div class="box">
-				<i class="fas fa-chart-line"></i>
-				<div class="text">Advertising</div>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-
+				<i class="fab fa-connectdevelop"></i>
+				<div class="text">Motion Design</div>
+			
             </div>
           </div> 
 
@@ -109,9 +121,9 @@
 
 		  <div class="card">
 			<div class="box">
-				<i class="fas fa-code"></i>
-				<div class="text">Apps Design</div>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+				<i class="far fa-play-circle"></i>
+				<div class="text">VFX Animations</div>
+				
 
             </div>
           </div> 
@@ -157,32 +169,36 @@
 
 	<!-- Portfolio section start -->
 
-	<section class = "section-three">
+
+
+
+	<section class = "section-three" id="section-three">
+
 		<div class="max-width">
 		<h2 class="title">My Portfolio</h2>
 		<div class = "container">
 			<div class = "gallery">
-				<a href = "images/gallery1.jpg">
+				<a href = "images/LR6.jpg">
 					<div class = "single-img">
-						<img src = "images/gallery1.jpg" alt = "gallery image">
+						<img src = "images/LR6.jpg" alt = "gallery image">
 						<div class = "single-img-content">
 							<h3>Beautiful Work</h3>
 						</div>
 					</div>
 				</a>
 
-				<a href = "images/gallery2.jpg">
+				<a href = "images/LR4.jpg">
 					<div class = "single-img">
-						<img src = "images/gallery2.jpg" alt = "gallery image">
+						<img src = "images/LR4.jpg" alt = "gallery image">
 						<div class = "single-img-content">
 							<h3>Beautiful Work</h3>
 						</div>
 					</div>
 				</a>
 
-				<a href = "images/gallery3.jpg">
+				<a href = "images/LR5.jpg">
 					<div class = "single-img">
-						<img src = "images/gallery3.jpg" alt = "gallery image">
+						<img src = "images/LR5.jpg" alt = "gallery image">
 						<div class = "single-img-content">
 							<h3>Beautiful Work</h3>
 						</div>
@@ -192,10 +208,51 @@
 
 			</div>
 		</div>
+	</div>
 	</section>
 
 
 <!-- End of Portfolio section  -->
+
+
+
+
+
+
+<!-- Contact -->
+
+
+<section id="contact">
+	<h2 class="title">Contact</h2>
+	<div class="container">
+	
+	
+		 <label for="name">Name:</label>
+		 <input type="text" id="name" name="name" placeholder="Name" required>
+	
+		 <label for="email">Email:</label>
+		 <input type="email" id="email" name="email" placeholder="Email" required>
+	
+	<label for="name">Message:</label>
+	<textarea name="message" id="message" cols="10" rows="10" placeholder="Message" required></textarea>
+	<input type="submit" value="Submit">
+	
+	
+	
+	</div>
+	
+	</section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
