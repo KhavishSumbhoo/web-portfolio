@@ -15,4 +15,29 @@ $(document).ready(function(){
 		$('.menu-btn i').toggleClass("active");
     });
 	
+
+
+
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Motion Designer","VFX Artist", "Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+
+ // typing text animation script
+ var typed = new Typed(".typing-2", {
+    strings: ["Motion Designer","VFX Artist", "Developer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+
+
+
+
+
 });
