@@ -15,6 +15,16 @@
 }
 
 
+html{
+scroll-behavior: smooth;
+
+}
+
+
+
+
+
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -31,6 +41,12 @@ img{
 h3, p{
     margin: 15px 0;
 }
+
+h6{
+display: none;
+
+}
+
 body{
     line-height: 1.6;
 }
@@ -67,22 +83,16 @@ body{
 
 
 
+.navbar-log img{
+    height: 3rem;
+    margin-left: -45px;
+    }
 
 
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
 
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
+.navbar ul{
+    float: right;
 
-
-.navbar.sticky .logo a span{
-    color: #fff;
 }
 
 
@@ -129,7 +139,7 @@ body{
 /* home section styling */
 .home{
 display: flex;
-background: url("images/banner.jpg") no-repeat center;	
+background: url("images/banner1.jpg") no-repeat center;	
 height: 100vh;
 color: #FFFFFF;
 min-height: 500px;	
@@ -171,7 +181,7 @@ font-family: 'Adamina', serif;
 /* all similar content styling code */
 
 section{
-	padding: 100px 0;
+	padding: 75px 0;
 }
 
 
@@ -410,6 +420,71 @@ transition: all ease 0.5s;
 
 
 
+
+/* Contact Section */
+
+
+
+
+
+form{
+
+    width: 70%;
+    margin: 0 auto;
+    
+    }
+    
+    
+    form label{
+    font-size: 1.5rem;
+    
+    }
+    
+    
+    input, textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border-color: black;
+    border-style: double;
+    
+    
+    }
+    
+    
+    
+    input[type="submit"]{
+    
+    width: initial;
+    background-color: #000000;
+    
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    
+    cursor: pointer;
+    transition: background-color 650ms;
+    
+    }
+    
+    
+    
+    input[type="submit"]:hover{
+    color: black;
+    background-color: azure;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
 /* Footer styling */
 
 footer{
@@ -428,7 +503,7 @@ footer{
 /* responsive media query start */
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
 	.home .max-width{
 		margin-left: 0px;
 	}
@@ -569,27 +644,29 @@ footer{
    
 }
 	
+
+
+
+
 }
-
-
-
-
 
 
 
 
 @media (max-width: 375px) {
- 
-	
-	.social-icons{
-        margin: 40px auto 0 auto;
-    padding-bottom: 30px;
-        align-items: center;
-     
-    }
 
-	
+.services .serv-content .card{
+    width: 75%;
+    
 }
+
+
+}
+
+
+
+
+
 
 
 
