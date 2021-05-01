@@ -19,25 +19,28 @@ $(document).ready(function(){
 
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Motion Designer","VFX Artist", "Developer"],
+    var typed = new Typed(".typing-1", {
+        strings: ["Motion Designer","VFX Artist", "Graphic Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
 
- // typing text animation script
- var typed = new Typed(".typing-2", {
-    strings: ["Motion Designer","VFX Artist", "Developer"],
+  // typing text animation script
+  var typed = new Typed(".typing-2", {
+    strings: ["Motion Designer","VFX Artist", "Graphic Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 });
 
-
-
-
-
-
 });
+
+
+
+// Lightbox
+
+var lightbox= new SimpleLightbox('.gallery a', {/* options */});
+
+
