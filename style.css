@@ -1,5 +1,5 @@
 
-
+/* Font link */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
@@ -9,6 +9,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+
+/* Overall Webpage CSS */
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +21,8 @@
 }
 
 
+/* Smooth scroll on html page */
+
 html{
 scroll-behavior: smooth;
 
@@ -24,8 +30,7 @@ scroll-behavior: smooth;
 
 
 
-
-
+/* Maximum Webpage size */
 
 .max-width{
     max-width: 1300px;
@@ -34,15 +39,19 @@ scroll-behavior: smooth;
 }
 
 
-/*portfolio image size*/
+
+/* Portfolio image size */
 img{
     width: 100%;
     display: block;
 }
 
+/* Heading 3 and p margin size */
+
 h3, p{
     margin: 15px 0;
 }
+
 
 h6{
 display: none;
@@ -55,13 +64,13 @@ body{
 
 
 
-/* navbar styling */
+/* Navigation bar (navbar)  - Styling - the navbar postion is fixed with a high value z-index and a transition */
+
 .navbar{
     position: fixed;
     width: 100%;
 	z-index: 999;
      padding: 30px 0;
-	/*background: #151515;*/
     font-family: 'Roboto', sans-serif;
 	transition: all 0.3s ease;
     
@@ -69,12 +78,16 @@ body{
 
 
 
+/* Navigation bar (navbar)  - Sticky - the navbar is positioned sticky  */
+
 .navbar.sticky{
     padding: 15px 0;
     background: #151515;
 }
 
 
+
+/* Navigation bar (navbar)  - Display - the element on the navbar is centered and have space in-between them   */
 
 .navbar .max-width{
     display: flex;
@@ -84,12 +97,16 @@ body{
 
 
 
+/* Navigation bar (navbar)  - Logo - Image size and postion on Nav bar   */
+
 .navbar-log img{
     height: 3rem;
     margin-left: -45px;
     }
 
 
+
+/* Navigation bar (navbar)  - Position -  The navbar elements ul are positioned right  */   
 
 .navbar ul{
     float: right;
@@ -98,11 +115,16 @@ body{
 
 
 
+/* Navigation bar (navbar)  - Position -  The navbar menu is positioned is horizontally using display: inline-block  */   
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
 
+
+
+/* Navigation bar (navbar)  - Menu -  The navbar menu styling  */
 
 .navbar .menu li a{    
     color: #fff;
@@ -114,10 +136,15 @@ body{
 
 
 
+/* Navigation bar (navbar)  - Menu -  There is hover when cursor on the menu  */
+
 .navbar .menu li a:hover{
     color: crimson;
 }
 
+
+
+/* Navigation bar (navbar)  - Menu -  There is hover even when navbar is positioned sticky  */
 
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -125,7 +152,8 @@ body{
 
 
 
-/* menu btn styling */
+/* Navigation bar (navbar)  - Menu Button - Menu Button Styling    */
+
 .menu-btn{
     color: #FFFFFF;
     font-size: 23px;
@@ -137,7 +165,8 @@ body{
 
 
 
-/* home section styling */
+/* Home Section -  Styling  - Home's font, font colour, backround image, height size and attachment   */
+
 .home{
 display: flex;
 background: url("images/lightspeed1.jpg") no-repeat center;	
@@ -147,16 +176,22 @@ min-height: 500px;
 background-size: cover;
 background-attachment: fixed;	
 font-family: 'Adamina', serif;
-    font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 	
 }
 
+
+
+/* Home Section -  Display - Home's display type and width  */
 
 .home .max-width{
   width: 100%;
   display: flex;
 }
 
+
+
+/* Home Section -  Text - Home's text size, margin and colour */
 
 .home .home-content .text-1{
     font-size: 27px;
@@ -179,12 +214,18 @@ font-family: 'Adamina', serif;
 
 
 
-/* all similar content styling code */
+
+
+
+/* All Section class - Headings 2 - padding  */
 
 section{
 	padding: 75px 0;
 }
 
+
+
+/* All Section class - Headings 2 - h2 (title) with font-family, font-size, font-weight, text centered, margin and bottom */
 
 section .title{
 	position: relative;
@@ -197,6 +238,9 @@ section .title{
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+/* All Section class - White space - White space under the underline   */
 
 section .title::before{
 	content: "";
@@ -211,8 +255,10 @@ section .title::before{
 
 
 
+/* All Section class - Underline - Text (content) between the underline (if there are any)  */
+
 section .title::after{
-	
+	content: "";
 	position: absolute;
 	bottom: -12px;
 	left: 50%;
@@ -228,20 +274,16 @@ section .title::after{
 
 
 
-/* about section styling */
-
-
+/* About Section, Service Section and Footer Section - Text - Text's font-family */
 
 .about, .services, footer{
     font-family: 'Adamina', serif;
     font-family: 'Poppins', sans-serif;
-
-
-
 }
 
 
 
+/* About Section - Underline - Text (content) between the underline */
 
 .about .title::after{
     content: "Who I am";
@@ -250,6 +292,7 @@ section .title::after{
 
 
 
+/* About Section with about-content and Service Section with serv-content  - display, flex-wrap, centered items and space between content */
 
 .about .about-content, .services .serv-content{
     display: flex;
@@ -258,10 +301,18 @@ section .title::after{
 	justify-content: space-between;
 }
 
+
+
+
+/* About Section - Text (p) - Text width */
+
 .about .about-content .center{
 width: 55%;
-
 }
+
+
+
+/* About Section - Text (p) - Text's font size, weight and margin */
 
 .about .about-content .center{
 font-size: 25px;
@@ -271,26 +322,28 @@ margin-bottom: 10px;
 }
 
 
+
+/* About Section - Text span (Animation) - Text's colour  */
+
 .about .about-content .center .text span{
 color: crimson;
 }
 
 
-.about .about-content .right p{
-    text-align: justify;
-}
 
 
 
 
-/* Services Section styling */
+/* Services Section - Styling - colour and background  */
 
 .services{
     color: #fff;
-    background: #1d1d1d;
-        
+    background: #1d1d1d;     
     }
 
+
+
+/* Services Section - White Space - background's color  */
 
 .services .title::before{
         background: #fff;
@@ -298,14 +351,16 @@ color: crimson;
 
 
 
+/* Services Section - Underline - background's color and text (content)  */
+
 .services .title::after{
     background: #1d1d1d;
     content: "what i provide";
-
-
 }
 
 
+
+/* Services Section - Card - Card's Setup  */
 
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -319,6 +374,9 @@ color: crimson;
 }
 
 
+
+/* Services Section - Card - Card hover when cursor is on on card  */
+
 .services .serv-content .card:hover{
     width: calc(33% - 20px);
     background: #111;
@@ -331,16 +389,23 @@ color: crimson;
 }
 
 
+
+/* Services Section - Card - Card hover colour  */
+
 .services .serv-content .card:hover{
     background: #111;
 }
 
 
+/* Services Section - Card & Box - Card & Box's transition speed  */
 
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
 
+
+
+/* Services Section - Card & Box hover - Card & Box's transform scale  */
 
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
@@ -348,11 +413,17 @@ color: crimson;
 
 
 
+/* Services Section - Card's icons - Card's icon font size, colour and transition  */
+
 .services .serv-content .card i{
     font-size: 50px;
     color: #111;
     transition: color 0.3s ease;
 }
+
+
+
+/* Services Section - Card's icons hover - Card's icon colour change when cursor hover on card  */
 
 .services .serv-content .card:hover i{
     color: #fff;
@@ -360,6 +431,7 @@ color: crimson;
 
 
 
+/* Services Section - Card's text - Card's text font-size, weight and margin */
 
 .services .serv-content .card .text{
     font-size: 25px;
@@ -370,38 +442,50 @@ color: crimson;
 
 
 
-/* Social Section styling */
 
-
+/* Social Section - Styling - Social icons width(space) between them, margin and padding   */
 
 .social-icons{
     width: 350px;
     margin: 40px auto 0 auto;
     padding-bottom: 30px;
 }
+
+
+
+/* Social Section - Social icons a - Social icons a (links) setup  */
+
 .social-icons a{
     color: #111;
     font-size: 30px;
     display: block;
     width: 50px;
     height: 50px;
-    
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
- 
 }
+
+
+/* Social Section - Social icons - Display: flex (horizontal) and space around   */
+
 .social-icons {
     display: flex;
     justify-content: space-around;
 }
 
 
+
+/* Social Section - Social icons i - colour   */
+
 .social-icons i{
     color: #000000;
 }
 
+
+
+/* Social Section - Social icons a:hover - when cursor hover, background border becomes black, shadow with transition  */
 
 .social-icons a:hover{
 background:  #000000;
@@ -410,6 +494,9 @@ transition: all ease 0.5s;
 
 }
 
+
+
+/* Social Section - Social icons a:hover i - when cursor hover, icons becomes white with transition  */
 
 .social-icons a:hover i{
 
@@ -422,68 +509,100 @@ transition: all ease 0.5s;
 
 
 
-/* Contact Section */
+/* Portfolio Section - Styling - Margin space between each photo  */
+
+.section-three{
+    margin: 40px 0;
+}
+
+
+
+/* Portfolio Section - Image - Image Setup */
+
+.single-img{
+    position: relative;
+    margin: 10px;
+}
+
+
+
+/* Portfolio Section - Heading border - Heading border Setup */
+
+.single-img-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Portfolio Section - Heading - Heading's font, size, weight and all text are uppercase  */
+
+.single-img-content h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
 
+
+
+/* Contact Section - Form - width and margin */
 
 form{
 
     width: 70%;
     margin: 0 auto;
-    
     }
     
+    
+
+/* Contact Section - Form label - text size */
     
     form label{
     font-size: 1.5rem;
-    
     }
     
     
+
+/* Contact Section - Input & Textarea - Input & Textarea Setup  */
+
     input, textarea{
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
     border-color: black;
     border-style: double;
-    
-    
     }
     
     
+
+/* Contact Section - Submit Button - Submit Button Setup  */    
     
     input[type="submit"]{
-    
     width: initial;
     background-color: #000000;
-    
     color: white;
     padding: 1rem 2rem;
     border-radius: .8rem;
-    
     cursor: pointer;
     transition: background-color 650ms;
-    
     }
     
     
+/* Contact Section - Submit Button Hover - Submit Button Hover Setup  */ 
     
     input[type="submit"]:hover{
     color: black;
     background-color: azure;
     
     }
-
-
-
-
-
-
-
-
-
 
 
 /* Footer styling */
@@ -501,45 +620,35 @@ footer{
 
 
 
-/* responsive media query start */
+/* Responsive Media Query - 1200px */
 
 
 @media (max-width: 1200px) {
 	.home .max-width{
 		margin-left: 0px;
-	}
-	
-	
-	
+}		
 }
 
 
-@media (max-width: 1104px) {
-	.about .about-content .left img{
-        height: 350px;
-        width: 350px;
-    }
-	
-}
 
+
+
+/* Responsive Media Query - 991px */
 
 @media (max-width: 991px) {
  .max-width{
         padding: 0 50px;
-    }
-	
+}	
 }
 
 
 
-@media (max-width: 947px) {
-    
-	
+/* Responsive Media Query - 947px */
+
+@media (max-width: 947px) {	
 	.menu-btn{
-    
     display: block;
-	z-index: 999;
-	
+	z-index: 999;	
 }
 	
 	 .menu-btn i.active:before{
@@ -555,9 +664,7 @@ footer{
 		background: #111;
 		text-align: center;
 		padding-top: 80px;
-		transition: all 0.3s ease;
-		
-		
+		transition: all 0.3s ease;		
 	}
 	
   .navbar .menu.active{
@@ -607,7 +714,7 @@ footer{
 
 
 
-
+/* Responsive Media Query - 690px */
 
 @media (max-width: 690px) {
  
@@ -628,104 +735,47 @@ footer{
     width: 100%
 
 }
-
 }
 
 
-@media (max-width: 500px) {
- 
-	
-	
+/* Responsive Media Query - 500px */
+
+@media (max-width: 500px) {	
 	.home .home-content .text-2{
     font-size: 50px;
     
 }
     .home .home-content .text-3{
-    font-size: 27px;
-   
+    font-size: 27px;  
 }
-	
-
-
-
-
 }
 
 
-
+/* Responsive Media Query - 375px */
 
 @media (max-width: 375px) {
 
 .services .serv-content .card{
-    width: 75%;
-    
+    width: 75%;  
 }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/**************** portfolio.html ***************/
-
-
-
-/* section three */
-
-
-.section-three{
-    margin: 40px 0;
-}
-.single-img{
-    position: relative;
-    margin: 10px;
-}
-.single-img-content{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #fff;
-    padding: 5px 30px;
-    background: rgba(0, 0, 0, 0.7);
-}
-.single-img-content h3{
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
 }
 
 
 
 
-
-/************** end of portfolio.html ***********/
-
-
-
+/* Responsive Media Query - Portfolio Media - Size  */
 
 @media screen and (min-width: 800px){ 
 	
-    .gallery{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-	
-	
-	
+.gallery{
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}		
 }
+
+
 	
-	
-	
+/* Responsive Media Query - Portfolio Media - Size  */
 
 @media screen and (min-width: 1200px){ 
 
